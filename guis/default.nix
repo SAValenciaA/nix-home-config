@@ -6,7 +6,7 @@
     ./waybar.nix
     ./zathura.nix
     ./hyprland.nix
-#    ./hyprlock.nix
+    ./hyprlock.nix
 #    ./hyprpaper.nix
   ];
   
