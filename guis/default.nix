@@ -4,7 +4,7 @@
     ./wofi.nix
     ./kitty.nix
     ./waybar.nix
-#    ./zathura.nix
+    ./zathura.nix
 #    ./hyprland.nix
 #    ./hyprlock.nix
 #    ./hyprpaper.nix
