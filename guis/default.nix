@@ -7,7 +7,7 @@
     ./zathura.nix
     ./hyprland.nix
     ./hyprlock.nix
-#    ./hyprpaper.nix
+    ./hyprpaper.nix
   ];
   
 }
