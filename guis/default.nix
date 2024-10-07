@@ -8,6 +8,7 @@
     ./hyprland.nix
     ./hyprlock.nix
     ./hyprpaper.nix
+    ./mako.nix
   ];
   
 }
