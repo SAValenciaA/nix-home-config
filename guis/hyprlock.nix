@@ -10,7 +10,7 @@
       # BACKGROUND
       background = {
         monitor = "";
-        path = "~/Pictures/Lock/LK1.png";
+        path = "~/Pictures/wallpaper/lockWallpaper.jpg";
         # 0 disables blurring;
         blur_passes = 0;
         blur_size = 7;

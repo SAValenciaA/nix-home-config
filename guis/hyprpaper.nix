@@ -7,12 +7,11 @@
     settings = {
 
       preload = [
-        "~/.config/hypr/Wallpapers/WP2.png"
-        "~/.config/hypr/Wallpapers/WP8.jpg"
+        "~/Pictures/wallpaper/mainWallpaper.png"
       ];
       wallpaper = [
-        "eDP-1,contain:~/.config/hypr/Wallpapers/WP2.png"
-        "HDMI-A-1,contain:~/.config/hypr/Wallpapers/WP8.jpg"
+        "eDP-1,contain:~/Pictures/wallpaper/mainWallpaper.png"
+        "HDMI-A-1,contain:~/Pictures/wallpaper/mainWallpaper.png"
       ];
 
     };
