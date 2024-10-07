@@ -5,7 +5,7 @@
   imports = [
     ./guis/default.nix
 #    ./clis/default.nix
-#    ./tuis/default.nix
+    ./tuis/default.nix
 #    ./bash.nix
   ];
 
