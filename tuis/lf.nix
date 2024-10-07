@@ -29,7 +29,7 @@
         files=$(${pkgs.coreutils}/bin/printf "$fx" | tr '\n' ';')
         while [ "$files" ]; do
           file=''${files%%;*}
-          ${pkgs.trash-cli}/bin/trash-put "$(basename "$file")"
+          ${pkgs.trash-cli}/bin/trash-put "$(${pkgs.coreutils}/bin/basename "$file")"
           if [ "$files" = "$file" ]; then
             files=""
           else
@@ -63,7 +63,7 @@
       '';
     };
 
-    cmdKeybindings = {
+    keybindings = {
       au = "unarchive";
       dd = "trash";
       p = "paste";
@@ -74,9 +74,6 @@
       mf = "mkfile";
       md = "mkdir";
       C = "clear";
-    };
-
-    keybindings = {
       gc = "cd ~/.config";
       gD = "cd ~/Documents";
       gd = "cd ~/Downloads";
