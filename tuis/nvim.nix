@@ -13,6 +13,48 @@
     vimAlias = true;
     vimdiffAlias = true;
 
+    defaultEditor = true;
+
+    extraLuaConfig = ''
+      vim.cmd("let g:netrw_liststyle = 3")
+
+      local opt = vim.opt
+
+      opt.relativenumber = true
+      opt.number = true
+
+      -- tabs & indentation
+      opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
+      opt.shiftwidth = 2 -- 2 spaces for indent width
+      opt.expandtab = true -- expand tab to spaces
+      opt.autoindent = true -- copy indent from current line when starting new one
+
+      opt.wrap = false
+
+      -- clipboard
+      opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+      opt.signcolumn = "yes" -- show sign column so that text doesn't shift
+        
+      -- search settings
+      opt.ignorecase = true -- ignore case when searching
+      opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
+
+      -- KEY MAPS
+
+      vim.g.mapleader = " "
+
+      local keymap = vim.keymap -- for conciseness
+
+      keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+      keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+
+      -- increment/decrement numbers
+      keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
+      keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
+
+
+'';
+
     extraPackages =  with pkgs; [
       wl-clipboard
     ];
