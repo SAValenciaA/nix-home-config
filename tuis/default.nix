@@ -6,6 +6,6 @@
 #    ./ncdu.nix
 #    ./tmux.nix
 #    ./ttyper.nix
-#    ./starship.nix
+    ./starship.nix
   ];
 }
