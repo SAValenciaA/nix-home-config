@@ -2,7 +2,7 @@
   imports = [
     ./lf.nix
     ./nvim.nix
-#    ./tmux.nix
+    ./tmux.nix
     ./starship.nix
   ];
 }
