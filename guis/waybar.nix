@@ -65,8 +65,8 @@
           "format-source" = " {volume}%";
           "format-source-muted" = " Muted";
           "on-click" = "pamixer --default-source -t";
-          "on-scroll-up" = "pamixer --default-source -i 5";
-          "on-scroll-down" = "pamixer --default-source -d 5";
+          "on-scroll-up" = "pamixer --default-source -i 1";
+          "on-scroll-down" = "pamixer --default-source -d 1";
           "scroll-step" = 5;
         };
 
