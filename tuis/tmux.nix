@@ -23,7 +23,7 @@
 
           set -g @catppuccin_window_default_fill "all"
           set -g @catppuccin_window_default_color "#cccccc"
-          set -g @catppuccin_window_default_background "#222222"
+          set -g @catppuccin_status_background none
 
           set -g @catppuccin_window_current_fill "all"
 
@@ -33,7 +33,6 @@
 
           set -g @catppuccin_window_current_background "#89b4fa"
           set -g @catppuccin_window_current_color "#89b4fa" # text color
-          set -g @catppuccin_status_background "#222222"
 
           set -g @catppuccin_pane_active_border_style "fg=#89b4fa"
 

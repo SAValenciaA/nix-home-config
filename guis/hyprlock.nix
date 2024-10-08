@@ -33,25 +33,29 @@
       input-field = {
         monitor = "";
         size = "250, 60";
-        outline_thickness = 0;
+        outline_thickness = 2;
         # Scale of input-field height, 0.2 - 0.8;
         dots_size = 0.2 ;
         # Scale of dots' absolute size, 0.0 - 1.0;
         dots_spacing = 0.2 ;
         dots_center = true;
-        outer_color = "rgb(112,192,112)";
+        outer_color = "rgb(137, 180, 250)";
+        inner_color = "rgba(0, 0, 0, 0.8)";
         fail_color = "rgb(192,112,112)";
-        inner_color = "rgb(112,192,112)";
         rounding = 0;
-        font_color = "rgb(34,34,34)";
+        font_color = "rgb(137, 180, 250)";
         fail_text = "<i><span foreground=\"##222222\">$ATTEMPTS</span></i>";
         fade_on_empty = false;
         font_family = "JetBrains Mono Nerd Font Mono";
         hide_input = false;
-        position = "0, 0";
-        halign = "center";
-        valign = "center";
+        position = "-25, -25";
+        halign = "right";
+        valign = "top";
         placeholder_text = "";
+        shadow_passes = 2;
+        shadow_size = 3;
+        shadow_color = "rgb(137, 180, 250)";
+        shadow_boost = 1.2;
       };
 
       # CURRENT SONG

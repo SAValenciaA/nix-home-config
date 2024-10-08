@@ -5,7 +5,7 @@
     enable = true;
     sort="-time";
     layer="overlay";
-    backgroundColor="#222222";
+    backgroundColor="#00000090";
     width=300;
     height=1010;
     padding="12";
