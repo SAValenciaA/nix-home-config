@@ -13,7 +13,7 @@
         "height" = 10;
         "modules-left" = ["hyprland/workspaces"];
         "modules-center" = ["clock"];
-        "modules-right" = ["network" "battery"];
+        "modules-right" = ["pulseaudio#microphone" "network" "battery"];
         "hyprland/window" = {
             "format" = "{}";
         };
@@ -41,6 +41,16 @@
             "format" = "    {:%I:%M %p | %a  %b %e}";
             "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
+        "pulseaudio#microphone" = {
+          "format" = "{format_source}";
+          "format-source" = " {volume}%";
+          "format-source-muted" = " Muted";
+          "on-click" = "pamixer --default-source -t";
+          "on-scroll-up" = "pamixer --default-source -i 5";
+          "on-scroll-down" = "pamixer --default-source -d 5";
+          "scroll-step" = 5;
+        };
+
 
         "battery" = {
             "states" = {
@@ -122,6 +132,18 @@
 
       #battery {
         background: rgba(0,0,0,0.1);
+      }
+
+      #pulseaudio.microphone.source-muted {
+        color: #89b4fa;
+        background: none;
+        text-shadow: 0 0 6px #89b4fa;
+      }
+
+      #pulseaudio.microphone {
+        background: #89b4fa;
+        color: rgba(0,0,0,0.9);
+        text-shadow: 0 0 6px rgba(0,0,0,0.9);
       }
 
       #custom-power_profile,
