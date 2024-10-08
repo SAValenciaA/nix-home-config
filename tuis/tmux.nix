@@ -13,16 +13,17 @@
       {
         plugin = tmuxPlugins.catppuccin;
         extraConfig = ''
+          set -g @plugin 'catppuccin/tmux'
           # Style costumization
           tmux_orange="#fa8585"
 
-          set -g @catppuccin_window_right_separator " "
+          set -g @catppuccin_window_right_separator ""
           set -g @catppuccin_window_number_position "right"
           set -g @catppuccin_window_middle_separator " | "
 
           set -g @catppuccin_window_default_fill "all"
-          set -g @catppuccin_window_default_color transparent
-          set -g @catppuccin_window_default_background "#cccccc"
+          set -g @catppuccin_window_default_color "#cccccc"
+          set -g @catppuccin_window_default_background "#222222"
 
           set -g @catppuccin_window_current_fill "all"
 
@@ -30,19 +31,19 @@
           set -g @catppuccin_status_left_separator "█"
           set -g @catppuccin_status_right_separator "█"
 
-          set -g @catppuccin_window_current_background transparent
+          set -g @catppuccin_window_current_background "#89b4fa"
           set -g @catppuccin_window_current_color "#89b4fa" # text color
-          set -g @catppuccin_status_background transparent
+          set -g @catppuccin_status_background "#222222"
 
           set -g @catppuccin_pane_active_border_style "fg=#89b4fa"
+
+
+          run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
         '';
       }
     ];
 
     extraConfig = ''
-
-      set-environment -g PATH "/usr/local/bin:/bin:/usr/bin"
-
       set -g mouse on
 
       # Bind gloval key to ñ
