@@ -58,3 +58,6 @@ export BROWSER=firefox
 
 # ZOXIDE
 eval "$(zoxide init bash)"
+
+# extract function
+source /home/$USER/.extract

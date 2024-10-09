@@ -20,6 +20,7 @@
   # plain files is through 'home.file'.
   home.file = {
     ".bashrc".source = dotfiles/bashrc;
+    ".extract".source = dotfiles/extract;
   };
 
   home.sessionVariables = {
