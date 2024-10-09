@@ -2,6 +2,9 @@
 # ~/.bashrc
 #
 
+# set lf's icons
+source /home/$USER/.lf_icons
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 

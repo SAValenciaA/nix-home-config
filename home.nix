@@ -21,6 +21,8 @@
   home.file = {
     ".bashrc".source = dotfiles/bashrc;
     ".extract".source = dotfiles/extract;
+    ".lf_icons".source = dotfiles/lf_icons;
+    ".profile".source = dotfiles/profile;
   };
 
   home.sessionVariables = {
