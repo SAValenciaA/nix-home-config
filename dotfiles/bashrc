@@ -44,7 +44,7 @@ alias py="python3 $1"
 # RENAMING ALIASES
 alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias kimg="kitten icat"
-alias copy="wl-copy"
+alias copy="wl-copy -o"
 alias run="hyprctl dispatch exec"
 alias remove='/usr/bin/rm'
 alias pw='keepassxc-cli'
