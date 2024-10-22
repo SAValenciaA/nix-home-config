@@ -64,3 +64,6 @@ eval "$(zoxide init bash)"
 
 # extract function
 source /home/$USER/.extract
+
+# set vim keybindings in the terminal
+set -o vi
