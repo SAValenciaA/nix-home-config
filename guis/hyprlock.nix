@@ -52,8 +52,8 @@
         halign = "right";
         valign = "top";
         placeholder_text = "";
-        shadow_passes = 2;
-        shadow_size = 3;
+        shadow_passes = 3;
+        shadow_size = 5;
         shadow_color = "rgb(137, 180, 250)";
         shadow_boost = 1.2;
       };
