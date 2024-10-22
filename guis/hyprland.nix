@@ -5,7 +5,7 @@
 
       "monitor" = [
         "eDP-1, 1366x768@60.01200, auto, auto"
-        "HDMI-A-1, 1920x1080@60.00000, 1366x0, auto"
+        "HDMI-A-1, 1920x1080@60.00000, auto, auto"
       ];
       "exec-once" = [
         "~/.config/hypr/xdg-portal-hyprland"
